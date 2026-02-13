@@ -1,0 +1,21 @@
+package com.example;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+
+@Configuration
+public class AppConfig {
+    @Bean("Movie1")
+    public Movie Movie1()
+    {
+        return new Movie();
+    }
+
+    @Bean("Movie2")
+    public Movie Movie2()
+    {
+        return new Movie();
+    }
+
+}
